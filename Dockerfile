@@ -5,7 +5,7 @@ USER root
 
 #RUN yum -y update
 RUN yum -y install wget
-RUN yum -y  java-1.8.0-openjdk-devel
+RUN yum -y install java-1.8.0-openjdk-devel
 
 RUN cd ~/
 RUN wget http://mirror.stjschools.org/public/apache/kafka/0.10.1.0/kafka_2.11-0.10.1.0.tgz
