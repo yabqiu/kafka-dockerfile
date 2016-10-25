@@ -9,7 +9,7 @@ RUN yum -y install java-1.8.0-openjdk-devel
 
 RUN cd ~/
 RUN wget http://mirror.stjschools.org/public/apache/kafka/0.10.1.0/kafka_2.11-0.10.1.0.tgz
-RUN tag xzvf kafka_2.11-0.10.1.0.tgz
+RUN tar xzvf kafka_2.11-0.10.1.0.tgz
 RUN cd kafka_2.11-0.10.1.0
 
 RUN cp config/server.properties config/server-1.properties
